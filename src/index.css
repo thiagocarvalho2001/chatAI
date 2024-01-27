@@ -1,0 +1,108 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column-reverse; 
+  gap: 1rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 0; 
+}
+
+p span {
+  font-size: 1rem;
+  display: block; 
+}
+
+p span:first-child {
+  font-weight: bold;
+  display: inline; 
+}
+
+.user_msg {
+  background-color: #4caf50;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.system-message {
+  background-color: #007bff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: #333;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  form {
+    flex-wrap: wrap;
+  }
+
+  input {
+    flex-basis: 100%;
+  }
+}
